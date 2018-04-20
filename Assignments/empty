@@ -1,2 +1,85 @@
-# study
-stydy
+function getElementById(id){
+    return document.getElementById(id);
+}
+
+getElementById('btn').addEventListener('click', app);
+
+getElementById('input-color').addEventListener('change', function(e){
+    css('color', e.target.value);
+});
+
+getElementById('input-font-size').addEventListener('change',function(e){
+    css('fontSize',e.target.value);
+});
+getElementById('input-color-test').addEventListener('change', function(e){
+    css('color', e.target.value);
+});
+
+function css(cssName, cssValue){
+        getElementById('content').style[cssName] = cssValue;
+        getElementById('test').style[cssName]=cssValue;
+
+}
+
+
+function draw(devicename){
+    getElementById('content').innerText = devicename
+}
+
+function isIPhone() {
+    return navigator.userAgent.match(/iPhone/);
+}
+
+function isAndroid() {
+    return navigator.userAgent.match(/Android/);
+}
+
+function app() {
+  if (isIPhone()) {
+    return draw('아이폰');
+  }
+  if(isAndroid()) {
+    return draw('안드로이드');
+  }
+
+  return draw('기타');
+}
+
+
+function sum(a){
+    return function(b){
+        return a + b;
+    }
+}
+console.log(sum(5)(10));
+console.log(sum(20)(10));
+console.log(sum(1)(4));
+
+function typeTokor(value){
+    if(typeof value == "number"){
+        console.log("숫자");
+    }
+    if(typeof value == "string"){
+        console.log("문자");
+    }
+    if(typeof value == "boolean"){
+        console.log("참거짓");
+    }
+    if (typeof value == "object"){
+        console.log("객체")
+    }
+}
+
+function biggest(n1, n2, n3, n4){
+    var arr = [n1, n2, n3, n4];
+    var maxNum = null;
+    for(var i=0; i<arr.length; i++){
+        if(maxNum == 0){
+            maxNum = arr[i];
+        }
+        if(maxNum < arr[i]){
+            maxNum = arr[i];
+        }
+    }
+    return maxNum;
+}
