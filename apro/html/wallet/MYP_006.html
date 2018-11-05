@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>CEREAL</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</head>
+<body>
+<div id="wrap" class="bg2"><!-- class 추가 --> 
+	<div class="top-area">
+		<h1>예치금 거래내역</h1>
+        <a href="#" class="bt-prev">이전</a>
+        <button class="navbt"></button>
+	</div>
+	<div id="content">
+        <div>
+            <dl class="payment-area">
+                <dt>어니스트펀드</dt>
+                <dd>
+                    <span>출금가능금액</span>
+                    <em><strong>77,480</strong>원</em>
+                </dd>
+            </dl>
+        </div>
+        <div class="cont-box type2">
+            <ul class="date-bt">
+                <li><button>1개월</button></li>
+                <li><button>3개월</button></li>
+                <li><button>6개월</button></li>
+                <li><button class="bt-period">기간설정</button></li>  
+            </ul>
+            <div class="date-set">
+                <span class="date-inp"><input type="tel"><button class="bt-cal"></button></span><span class="date-inp"><input type="tel"><button class="bt-cal"></button></span><button class="bt line">확인</button><!-- 18.08.10 버튼 추가 -->
+            </div>
+            <ul class="my-list type2">
+                <!-- 반복 -->
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="minus">출금</li><!-- 출금 일때  class minus 추가-->
+                            <li class="num"><strong class="minus">-200,000</strong>원</li><!-- 출금 일때  class minus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                        </ul>
+                        <div class="my-list-bottom">
+                            <ul class="dealing-info2">
+                                <li><span>은행명</span><span>기업은행</span></li>
+                                <li><span>계좌정보</span><span>20621234789</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- //반복 -->
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="plus">입금</li><!-- 입금 일때  class plus 추가-->
+                            <li class="num"><strong class="plus">+430,000</strong>원</li><!-- 입금 일때  class plus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                        </ul>
+                        <div class="my-list-bottom">
+                            <ul class="dealing-info2">
+                                <li><span>은행명</span><span>기업은행</span></li>
+                                <li><span>계좌정보</span><span>20621234789</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="plus">투자반환금</li><!-- 입금 일때  class plus 추가-->
+                            <li class="num"><strong class="plus">+200,000</strong>원</li><!-- 입금 일때  class plus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                        </ul>
+                        <div class="my-list-bottom">
+                            <ul class="dealing-info2">
+                                <li><span>은행명</span><span>기업은행</span></li>
+                                <li><span>계좌정보</span><span>20621234789</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>        
+            <div class="nolist">거래내역이 없습니다</div><!-- 2018.08.29  추가 거래내역 없을때 -->    
+        </div>	
+    </div>
+    <a href="#content" class="top-bt"></a><!-- top버튼 -->
+</div>
+</body>
+</html>

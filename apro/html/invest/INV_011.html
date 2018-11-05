@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>CEREAL</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</head>
+<body>
+<div id="wrap"> 
+	<div class="top-area type2">
+		<h1>자동투자</h1>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a>
+	</div>
+	<div id="content" class="invest">
+        <div class="cont-box">
+            <dl class="dl-box">
+                <dt>자동투자 업체</dt>
+                <dd>
+                    <input type="text" class="select" placeholder="업체 선택" value="">
+                </dd>
+                <dt>자동투자 금액</dt>
+                <dd class="posr">
+                    <input type="tel"  class="inp01" placeholder="투자할 금액 입력" value=""><span class="won">만원</span><button class="reset-val">x</button>
+                    <p class="info-t type2 point3">설정하신 금액만큼 자동으로 투자가 신청됩니다.</p>
+                </dd>
+            </dl>
+            <button class="filterbt type2 on"><span>상세 설정</span></button>
+            
+        </div>	
+	</div>
+	<div class="btn-area">
+		<a href="#" class="bt disable">확인</a><!-- 버튼에 class disable 빼면 활성화 버튼-->
+	</div>	
+</div>
+<!-- 팝업  -->
+<div class="popup type2">
+    <div class="pop-cont">
+        <div class="poparea">
+            <div class="pop-tit">자동투자 업체 선택</div>
+            <ul class="pop-list" >
+                <li><span class="txt1">나인티데이지</span></li>
+                <li><span class="txt1">업체명1</span></li>
+                <li><span class="txt1">업체명2</span></li>
+                <li><span class="txt1">업체명3</span></li>
+            </ul>
+        </div>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a><!-- 닫기 버튼 -->
+    </div>
+</div>
+<!-- //팝업  -->
+</body>
+</html>

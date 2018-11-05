@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>CEREAL</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</head>
+<body>
+<div id="wrap"> 
+	<div class="top-area type2">
+		<h1>투자하기</h1>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a>
+	</div>
+	<div id="content" class="invest">
+        <dl class="dl-list">
+            <dt>연결계좌</dt>
+            <dd><p class="select"><span class="txt2">신한은행 10****65911</span></p></dd>
+        </dl>
+        <div class="cont-box">
+            <dl class="dl-box">
+                <dt class="posr">투자할 금액 <span class="price">현재 충전금액 100,000원</span></dt>
+                <dd class="posr">
+                    <input type="tel" class="prinp inp01" placeholder="투자 금액 입력" value=""><span class="won">만원</span><button class="reset-val">x</button>
+                    <p class="info-txt">투자한도가 <span class="point1">30만원</span> 초과되었습니다.</p>
+                    <p class="info-txt">투자 가능 금액은 <span class="point1">200만원</span> 입니다.</p>
+                    <p class="info-txt">부족금액 <span class="point1">5만원</span>은 연결계좌에서 자동 출금됩니다.</p>
+                    <p class="info-txt">10만원 단위씩 투자 가능합니다. 예)10만원, 20만원, 30만원</p>
+                </dd>
+            </dl>
+            <div class="num-btns">
+                <button class="add-val" data-addvalue="1">+1만</button><button class="add-val" data-addvalue="5">+5만</button><button class="add-val"  data-addvalue="10">+10만</button><button class="add-val"  data-addvalue="50">+50만</button><button class="add-val" data-addvalue="100">+100만</button>
+            </div>
+            <ul class="bul-list">
+                <li>최소 1만원/최대 200만원</li>
+                <li>투자금액이 충천금 보다 많은 경우 연결계좌에서 자동 출금됩니다. </li>
+            </ul>
+        </div>	
+	</div>
+	<div class="btn-area">
+		<a href="#" class="bt disable">다음</a><!-- 버튼에 class disable 빼면 활성화 버튼-->
+	</div>	
+</div>
+<!-- 팝업  -->
+<div class="popup type2">
+    <div class="pop-cont">
+        <div class="poparea">
+            <!--삭제<div class="pop-tit">계좌 선택</div>-->
+            <ul class="pop-list" >
+                <li><span class="txt2">신한은행 10****65911</span></li>
+                <li><span class="txt2">신한은행 10****65911</span></li>
+                <li><span class="txt2">신한은행 10****65911</span></li>
+                <li><span class="txt2">신한은행 10****65911</span></li>
+            </ul>
+        </div>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a><!-- 닫기 버튼 -->
+    </div>
+</div>
+<!-- //팝업  -->
+</body>
+</html>

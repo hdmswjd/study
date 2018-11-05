@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>CEREAL</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</head>
+<body>
+<div id="wrap" class="bg2"><!-- class 추가 --> 
+	<div class="top-area">
+		<h1>충전금 거래내역</h1>
+        <a href="#" class="bt-prev">이전</a>
+        <button class="navbt"></button>
+	</div>
+	<div id="content">
+        <div>
+            <dl class="payment-area">
+                <dt>총 충전금</dt>
+                <dd>
+                    <em class="space1"><strong>100,000</strong>원</em>
+                    <p><a href="#"><span class="ico-deal1"></span>충전</a><a href="#"><span class="ico-deal2"></span>출금</a><a href="#"><span class="ico-deal3"></span>송금</a></p>
+                </dd>
+            </dl>
+        </div>
+        <div class="cont-box type2">
+            <ul class="date-bt">
+                <li><button class="on">1개월</button></li>
+                <li><button>3개월</button></li>
+                <li><button>6개월</button></li>
+                <li><button class="bt-period">기간설정</button></li>  
+            </ul>
+            <div class="date-set">
+                <span class="date-inp"><input type="tel"><button class="bt-cal"></button></span><span class="date-inp"><input type="tel"><button class="bt-cal"></button></span><button class="bt line">확인</button>
+            </div>
+            <div class="sort type2">
+                <p class="select type2">전체</p>
+            </div>
+            <ul class="my-list">
+                <!-- 반복 -->
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="minus">출금</li><!-- 출금 일때  class minus 추가-->
+                            <li class="num"><strong class="minus">-200,000</strong>원</li><!-- 출금 일때  class minus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                            <li class="name">우리 김프로</li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- //반복 -->
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="plus">입금</li><!-- 입금 일때  class plus 추가-->
+                            <li class="num"><strong class="plus">+430,000</strong>원</li><!-- 입금 일때  class plus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                            <li class="name">카카오 김프로</li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 송금대기 -->
+                <li class="send"><!-- 송금대기일때  class 추가-->
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="">송금대기</li><!-- 송금대기 일때  class minus 추가-->
+                            <li class="num"><strong>200,000</strong>원</li><!-- 출금 일때  class minus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                            <li class="name">5678 김수현</li>
+                        </ul>
+                    </div>
+                    <div class="bts-area"><a href="#" class="pop-bt">알리기</a><a href="#">송금취소</a></div>
+                </li>
+                <!-- //송금대기 -->
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="plus">충전</li><!-- 충전 일때  class plus 추가-->
+                            <li class="num"><strong class="plus">+430,000</strong>원</li><!-- 입금 일때  class plus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                            <li class="name">시리얼 전지현</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="minus">투자</li><!-- 투자 일때  class minus 추가-->
+                            <li class="num"><strong class="minus">-430,000</strong>원</li><!-- 투자 일때  class minus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                            <li class="name">진안군청건축자금</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="minus">송금</li><!-- 송금 일때  class minus 추가-->
+                            <li class="num"><strong class="minus">-430,000</strong>원</li><!-- 송금 일때  class minus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                            <li class="name">진안군청건축자금</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dealing">
+                        <p class="date">2018.03.03 <span class="hour">20:53:58</span></p>
+                        <ul class="dealing-info1">
+                            <li class="plus">송금취소</li><!-- 송금취소 일때  class plus 추가-->
+                            <li class="num"><strong class="plus">+430,000</strong>원</li><!-- 송금취소 일때  class plus 추가-->
+                            <li>잔액 <strong>637,740</strong>원</li>
+                            <li class="name">시리얼 전지현</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>        
+            <div class="nolist">거래내역이 없습니다</div><!-- 2018.08.29  추가 거래내역 없을때 -->   
+        </div>	
+    </div>
+    <a href="#content" class="top-bt"></a><!-- top버튼 -->
+</div>
+<!-- 팝업  -->
+<div class="popup type2">
+    <div class="pop-cont">
+        <div class="poparea">
+            <ul class="pop-list" >
+                <li><span class="txt1">전체</span></li>
+                <li><span class="txt1">충전</span></li>
+                <li><span class="txt1">출금</span></li>
+                <li><span class="txt1">송금</span></li>
+                <li><span class="txt1">투자</span></li>
+            </ul>
+        </div>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a><!-- 닫기 버튼 -->
+    </div>
+</div>
+<!-- //팝업  -->
+<!-- 팝업 / 기존과 형식이 달라서 리스트 안의 코딩이 다름 -->
+<div class="popup type3">
+    <div class="pop-cont">
+        <div class="poparea">
+            <div class="pop-list">
+                <a href="#">문자</a>
+                <a href="#">카카오톡</a>
+            </div>
+        </div>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a><!-- 닫기 버튼 -->
+    </div>
+</div>
+<!-- //팝업  -->
+</body>
+</html>

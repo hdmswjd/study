@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>CEREAL</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</head>
+<body>
+<div id="wrap"> 
+	<div class="top-area type2">
+		<h1>충전금 채우기 (내계좌>충전금)</h1>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a>
+	</div>
+	<div id="content" class="">
+        <dl class="dl-list">
+            <dt>연결계좌</dt>
+            <dd><p class="select"><span class="txt2">신한은행 10****65911</span></p></dd>
+        </dl>
+        <div class="cont-box">
+            <dl class="dl-box">
+                <dt class="posr">충전할 금액 <span class="price">현재 충전금 100,000원</span></dt>
+                <dd class="posr">
+                    <input type="tel" class="prinp"  placeholder="충전 금액 입력" value=""><span class="won">원</span><button class="reset-val">x</button>
+                </dd>
+            </dl>
+            <div class="num-btns">
+                <button class="add-val" data-addvalue="10000">+1만</button><button class="add-val" data-addvalue="50000">+5만</button><button class="add-val"  data-addvalue="100000">+10만</button><button class="add-val" data-addvalue="500000">+50만</button><button class="add-val" data-addvalue="1000000">+100만</button>
+            </div>
+        </div>	
+	</div>
+	<div class="btn-area">
+		<a href="#" class="bt disable">확인</a><!-- 버튼에 class disable 빼면 활성화 버튼-->
+	</div>	
+</div>
+<!-- 팝업  -->
+<div class="popup type4"><!-- class 추가 -->
+    <div class="pop-cont">
+        <div class="poparea">
+            <!--삭제 <div class="pop-tit">계좌 선택</div>-->
+            <ul class="pop-list" >
+                <li><span class="txt2">신한은행 10****65911</span></li>
+                <li><span class="txt2">신한은행 10****65912</span></li>
+                <li><span class="txt2">신한은행 10****65913</span></li>
+            </ul>
+        </div>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a><!-- 닫기 버튼 -->
+    </div>
+</div>
+<!-- //팝업  -->
+</body>
+</html>

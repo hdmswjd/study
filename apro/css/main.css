@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+#wrap.iphone .nav-top {padding-top:57px}
+#wrap.iphone .nav-middle  {top:190px; }
+
+#wrap.iphone .swiper-slide h1 {padding-top:287px;}
+#wrap.iphone .mainswiper .swiper-slide .bgcolor { height:492px;}
+#wrap.iphone .nav-middle.active .nav-list {padding-top:40px;  }
+.main {background-color:#f7f7f7}
+.swipe-nav {width:100%;  z-index:9999}
+.nav-top {width:100%; position:fixed; padding-top:37px; z-index:999; }
+.nav-middle {width:100%; position:fixed; top:150px; box-sizing:border-box; z-index:9999}
+.nav-middle.active {top:0!important; background-color:#fff; opacity:1 !important}
+.nav-list{height:100%; width:93%; margin:0 auto; text-align:center}
+.nav-item {position:relative; opacity:.5; margin-left:9%; display:inline-block; padding:0 10px 6px 10px; line-height:1.2}
+.nav-item:first-child {margin-left:0}
+.nav-item a {color:#fff; font-size:17px;}
+.nav-item.active {opacity:1; font-weight:bold; border-bottom:2px solid #fff}
+.nav-middle.active .nav-list {justify-content:space-around; height:50px; padding-top:20px;  }
+.nav-middle.active .nav-item {padding:0 10px;  opacity:1 !important}
+.nav-middle.active .nav-item a {color:#bbb; font-size:16px; line-height:50px; opacity:1 !important}
+.nav-middle.active .nav-item.active {border-bottom:0; }
+.nav-middle.active .nav-item.active:after {content:""; display:inline-block; position:absolute; bottom:0; left:0;  width:100%; height:2px; background:#333}
+.nav-middle.active .nav-item.active a {color:#333;}
+.swiper-container.mainswiper {width:100%; height:100%; -webkit-overflow-scrolling:touch}
+.mainswiper .swiper-wrapper {height:100%}
+.mainswiper .swiper-slide {box-sizing:border-box; height:100%; overflow-y:auto}
+.mainswiper .swiper-slide:nth-child(1) .bgcolor{background-color:#8bcb2f}
+.mainswiper .swiper-slide:nth-child(2) .bgcolor{background-color:#7d4bd2}
+.mainswiper .swiper-slide:nth-child(3) .bgcolor{background-color:#fc735d}
+.mainswiper .swiper-slide .bgcolor{display:block; width:100%; height:459px; position:absolute; top:0; left:0; z-index:-1 }
+.mainswiper .swiper-slide h1{position:relative; width:100%; padding-top:273px; right:20px; font-size:40px; font-family: 'SpoqaHanSansLight'; text-align:right; line-height:1.3; color:#fff; z-index:0; letter-spacing:-2px; font-weight:normal}
+.mainswiper .swiper-slide h1 strong {font-family: 'SpoqaHanSansRegular';}
+.swiper-content-area{position:relative; width:100%;  z-index:1;}
+.swiper-content-grid{position:relative; width:90%;  top:32px;  margin:0 5%; box-sizing:border-box; padding-bottom:20px;}
+.swiper-content-item{height:15%;margin-bottom:3%;background-color:#fff}
+
+.swiper-container-android .swiper-slide,.swiper-wrapper{-webkit-transform:none;-ms-transform:none;transform:none}
+
+.banswiper {height:auto; padding-bottom:17px !important;}
+.banswiper .swiper-pagination {bottom:-6px !important; border-radius:0 !important}
+.banswiper .swiper-pagination-bullet-active {width:17px !important; background:#333 !important; border-radius:0 !important}
+.banswiper .swiper-pagination-bullet {width:12px; height:2px; background:#d7d7d7; opacity:1;  border-radius:0 !important}
+.banswiper + .pro-list.card {margin-top:30px}
+.swiper-content-grid .bottom-txt {position:relative; bottom:auto; margin-top:20px; margin-bottom:7px}
+
+.main-fin-box {width:100%; padding:30px 0 25px; background:#fff; margin-top:30px; text-align:center}
+.main-fin-box .img {width:36%; margin:0 auto}
+.main-fin-box p {margin-top:3px; font-size:14px; color:#999}
+.main-box {position:relative; padding:20px 17px 20px;background:#fff; margin-top:10px}
+.main-box:first-child {margin-top:0}
+.main-box h2 {font-size:16px}
+.main-box.story ul:after {content:""; clear:both; display:block; }
+.main-box.story ul {margin-top:25px}
+.main-box.story ul li {position:relative; float:left; width:48%; }
+.main-box.story ul li:first-child {margin-right:4%}
+.main-box.story ul li a {position:absolute; top:0; left:0; width:100%;  height:100%; display:block; padding:15px 12px 0; color:#fff; background:rgba(0,0,0,.5); box-sizing:border-box}
+.main-box.story ul li a .tag {display:block; font-size:12px; color:#fff; opacity:.8; background:none; padding:0}
+.main-box.story ul li a .tit {position:absolute; bottom:15px; display:block;  font-size:14px; height:41px; overflow:hidden; left:12px; right:12px }
+.main-box .more {position:absolute; display:block;  right:17px; font-size:14px; color:#999; top:22px}
+.main-box.epilogue {padding-bottom:0}
+.main-box.epilogue .go {display:block; position:absolute; top:0; left:0; width:100%; height:100%; text-indent:-9999px}
+.main-box.epilogue .comm-list .comm-list-item .text-part .tit .tits {font-weight:normal}
+.main-box.epilogue .comm-list .comm-list-item {border-top:1px solid #f4f4f4; margin-top:0; padding:25px 0 }
+.main-box.epilogue .comm-list .comm-list-item:first-child {border-top:0}
+.main-box.epilogue .comm-list .comm-list-item .img {left:0}
+.main-box.board {padding-bottom:0}
+.main-box.board .comm-list .comm-list-item {padding:20px 0; border-top:1px solid #f4f4f4}
+.main-box.board .comm-list .comm-list-item:first-child {margin-top:0; border-top:0}
+.main-box.board .comm-list-item.type3 .tit .tits {width:100%}
+.main-box.board .comm-list-item.type3 .user {text-align:right}
+.main-box.board .user span {margin-right:0; padding-right:0}
+.main-box.board .user span:after {display:none}
+.main-box + .banner {margin-top:10px}
+.main-box + .banner a {display:block;}
+#banner2 {margin-top:10px}
+
+.myinvest-info1 {padding-bottom:15px; border-bottom:1px solid #f2f2f2; margin-top:-3px}
+.myinvest-info1:after {content:""; clear:both; display:block; }
+.myinvest-info1 a {display:block; float:left; font-size:12px}
+.myinvest-info1 a.myacc1 {width:61%; color:#999; padding-top:10px}
+.myinvest-info1 a.myacc1.type2 {padding:0; color:#666; letter-spacing:0}
+.myinvest-info1 a.myacc2 {width:24%;}
+.myinvest-info1 a.myacc3 {width:15%;}
+.myinvest-info1 a span {display:block; }
+.myinvest-info1 a .num {display:inline-block; background:url(../images/arrright.png) no-repeat right 4px; background-size:6px 11px; padding-right:10px; letter-spacing:0}
+.myinvest-info1 a .num em {color:#7c4cd1}
+.myinvest-info2 {position:relative; padding-top:20px;}
+.myinvest-info2 .sum {position:absolute; right:0; top:20px; color:#7c4cd1; letter-spacing:0}
+.myinvest-info2 .sum strong {letter-spacing:0}
+.myinvest-info2 ul {margin-top:15px}
+.myinvest-info2 ul li {display:table; width:100%; font-size:14px; padding-bottom:3px;}
+.myinvest-info2 ul li span {display:table-cell; }
+.myinvest-info2 ul li span:first-child {width:30%; color:#999; }
+.myinvest-info2 ul li span:last-child {width:70%; text-align:right; letter-spacing:0}
+.myinvest-info2 .no-invest {font-size:14px; color:#999; padding-top:63px; margin-top:6px; text-align:center; background:url(../images/bg_wallet2_m.png) no-repeat center top; background-size:51px 53px; }
+.main-box.recharge {padding-bottom:0}
+.main-box.recharge .sum {position:absolute; right:17px; top:20px; font-size:16px; color:#ff4b2e; letter-spacing:0}
+.main-box.recharge ul {margin:15px -17px 0; height:42px; border-top:1px solid #f2f2f2; box-sizing:border-box}
+.main-box.recharge ul:after {content:""; clear:both; display:block; } 
+.main-box.recharge ul li {float:left; width:33.3%; border-left:1px solid #f2f2f2; line-height:41px; text-align:center; box-sizing:border-box}
+.main-box.recharge ul li:first-child {border-left:0}
+.main-box.recharge ul li a {display:block; width:100%}
+.main-box .my-list > li {padding:17px 0; margin-top:0; border-top:1px solid #f2f2f2}
+.main-box .my-list > li:first-child {border-top:0}
+.wallet-logB .main-box {padding-top:35px; padding-bottom:27px}
+.wallet-logB .main-box dl dt {padding-top:75px; text-align:center; font-weight:bold;  background:url(../images/bg_wallet_m.png) no-repeat center top; background-size:71.5px 58px;}
+.wallet-logB .main-box dl dd {font-size:14px; color:#999; text-align:center; margin-top:8px; line-height:1.4}
+.main .pro-list.card {margin-top:30px}
+
+@media (max-width: 360px){
+    .main-box.story ul li a .tit {line-height:1.4; }
+}
+
+@media (max-width: 320px){
+    .nav-item {margin-left:4%}
+    .myinvest-info1 a.myacc1 {width:59%}
+    .myinvest-info1 a.myacc3 {width:17%;}
+
+}
+

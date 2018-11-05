@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="once">
+		<span v-once>메세지: {{ msg }}</span>
+		<p v-once v-if="value > 5">value 가 5보다 크군요</p>
+		<p v-else-if="value === 5">값이 5네요</p>
+		<p v-else>value 가 5보다 작아요</p>
+		<p v-once>초기값 : {{value}}</p>
+		<p>현재값 : {{value}}</p>
+	</div>
+	<!-- <div>
+		<p>using mustaches: {{rawHtml}}</p>
+		<p>Using v-html directive: <span v-html="rawHtml"></span></p>
+	</div> -->
+	<!-- <div id="">
+		{{message.split('').reverse().join('')}}
+	</div>
+	<div id="demo">{{fullName}}</div>
+	<div v-bind:class="{avtive : isActive}"></div> -->
+	<my-component class="baz boo"></my-component>
+	<div id="vm3" v-bind:style="{color:activeColor, fontSize:fontSize+'px'}">안녕하세요</div>
+	<div id="vm4" v-bind:stle="styleObject">안녕</div>
+</body>
+<script>
+var app = new Vue ({
+	el : '#once',
+	data : {
+		msg: 'v-once',
+		value : 0
+	}
+})
+// var vm = new Vue ({
+//  el : '#example',
+//  data :{
+// 	 message : '안녕하세요',
+// 	 computed : {
+// 		 resversedMessage : function() {
+// 			 return this.message.split('').reverse().join('')
+// 		 }
+// 	 }
+//  }
+// })
+// var vm2 = new Vue ({
+// 	el : '#demo',
+// 	data : {
+// 		firstName : 'foo',
+// 		lastName : 'Bar',
+// 	},
+// 	computed : {
+// 		fullName : function(){
+// 			return  this.firstName + '' + this.lastName
+// 		}
+// 	}
+// })
+Vue.component('my-component', {
+	template:'<p class="foo bar">hi</p>'
+})
+var vm3 = new Vue ({
+	el : '#vm3',
+	data : {
+		activeColor:'red',
+		fontSize:38
+	}
+})
+var vm4 = new Vue ({
+	el : '#vm4',
+	data : {
+		styeObject : {
+			color:'blue',
+			fontSize:'13px'
+		}
+	}
+})
+</script>
+<style scoped>
+#app-2 span {display:block}
+</style>
+</html>

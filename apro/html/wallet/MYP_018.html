@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>CEREAL</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</head>
+<body>
+<div id="wrap"> 
+	<div class="top-area type2">
+		<h1>충전금 보내기</h1>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a>
+	</div>
+	<div id="content" class="">
+        <dl class="dl-list">
+            <dt>주계좌</dt>
+            <dd><p><span class="txt2">우리은행 123-456-789</span></p></dd>
+        </dl>
+        <div class="cont-box">
+            <dl class="dl-box">
+                <dt class="posr">송금할 금액 <span class="price">현재 충전금 100,000원</span></dt>
+                <dd class="posr">
+                    <input type="tel" class="prinp"  placeholder="송금 금액 입력" value=""><span class="won">원</span><button class="reset-val">x</button>
+                </dd>
+            </dl>
+            <p class="info-txt">부족금액 <span class="point1">5만원은</span> 주계좌에서 자동 출금됩니다.</p>
+            <div class="num-btns">
+                <button class="add-val" data-addvalue="10000">+1만</button><button class="add-val" data-addvalue="50000">+5만</button><button class="add-val"  data-addvalue="100000">+10만</button><button class="add-val" data-addvalue="500000">+50만</button><button class="add-val" data-addvalue="1000000">+100만</button>
+            </div>
+            <ul class="bul-list">
+                <li>송금 금액이 충전금 보다 많은경우 주계좌에서 자동 출금됩니다.</li>
+                <li>시리얼 회원끼리 송금은 1일 3회, 포인트 10P 지급! </li>
+            </ul>
+        </div>	
+	</div>
+	<div class="btn-area">
+		<a href="#" class="bt disable">확인</a><!-- 버튼에 class disable 빼면 활성화 버튼-->
+	</div>	
+</div>
+</body>
+</html>

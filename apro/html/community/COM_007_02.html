@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>CEREAL</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css" />
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+</head>
+<body>
+<div id="wrap" >
+	<div class="top-area">
+		<h1>자유게시판</h1>
+        <a href="#" class="bt-prev">이전</a>
+        <button class="navbt"></button>
+	</div>
+	<div id="content" class="community"><!-- class 추가-->
+        <div class="cont-box type2 no-result"><!-- 검색없을때 class 추가-->
+            <div class="search-area">
+                <input type="text" placeholder="검색어를 입력하세요."><button class="reset-val"></button><button class="search-bt"></button>
+            </div>
+            <div class="sort">
+                <p class="select type2">전체</p>
+                <p class="select type2">최신순</p>
+            </div>
+            <div class="no-result-cont">
+                <div class="img"><img src="../../images/img_noresult.png" alt=""> </div>
+                <p>검색 결과가 없습니다</p>
+            </div>
+        </div>   
+	</div>
+</div>
+<!-- 팝업  -->
+<div class="popup type2">
+    <div class="pop-cont">
+        <div class="poparea">
+            <ul class="pop-list" >
+                <li><span class="txt1">전체</span></li>
+                <li><span class="txt1">투자정보공유</span></li>
+                <li><span class="txt1">재테크</span></li>
+                <li><span class="txt1">꿀팁</span></li>
+                <li><span class="txt1">잡담</span></li>
+                <li><span class="txt1">질문</span></li>
+                <li><span class="txt1">내가 쓴 글</span></li>
+            </ul>
+        </div>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a><!-- 닫기 버튼 -->
+    </div>
+</div>
+<div class="popup type3">
+    <div class="pop-cont">
+        <div class="poparea">
+            <ul class="pop-list" >
+                <li><span class="txt1">최신순</span></li>
+                <li><span class="txt1">좋아해요순</span></li>
+                <li><span class="txt1">조회수순</span></li>
+            </ul>
+        </div>
+        <a href="#" class="close"><span class="ico-close1"></span><span class="ico-close2"></span></a><!-- 닫기 버튼 -->
+    </div>
+</div>
+<!-- //팝업  -->
+</body>
+</html>
