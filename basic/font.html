@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="android">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
        *{padding:0;margin:0}
        .box {padding:30px}
        ul li {list-style: none;}
+       html {font-size:11px}
     </style>
 </head>
 <body>
@@ -42,8 +43,9 @@
             function zoomCheck(){
                 if($('html').hasClass('android')){
                     $('.switch input').change(function(){
+                        console.log('aaa');
                         if($(this).is(':checked')){
-                            console.log('aaa');
+                           
                             zoomIn()
                         }else {
                             zoomOut()
