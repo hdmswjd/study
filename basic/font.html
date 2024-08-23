@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+
+    <style>
+       *{padding:0;margin:0}
+       .box {padding:30px}
+       ul li {list-style: none;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="switch">
+            <input type="checkbox">큰글씨</input>
+        </div>
+        <ul>
+            <li> asghaedtaswetasdg </li>
+            <li> 안녕하세요 </li>
+        </ul>
+       
+    </div>
+   
+    <script>
+        //디바이스 체크
+        function deviceCheck(){
+            var mobile = (/iPhone|iPad|iPod|android/i.test(navigator.userAgent.toLowerCase()));
+            if(mobile){
+                var userAgent = navigator.userAgent.toLowerCase();
+                if(userAgent.search('android') > -1) {
+                    $('html').addClass('android');
+                }else{
+                    $('html').addClass('ios');
+                }
+            }else{
+                $('html').addClass('pc')
+            }
+         }
+            function zoomCheck(){
+                if($('html').hasClass('android')){
+                    $('.switch input').change(function(){
+                        if($(this).is(':checked')){
+                            console.log('aaa');
+                            zoomIn()
+                        }else {
+                            zoomOut()
+                        }
+                    });
+                }else if($('html').hasClass('ios')){
+                    $('.switch input').change(function(){
+                        if($(this).is(':checked')){
+                            $('html').css({'font-size':'11px'})
+                        }else {
+                            $('html').css({'font-size':'62.5%'})
+                        }
+                    });
+
+                }
+            }
+            function zoomIn(){
+            zoomSize *= 1.06;
+            zoom()
+            }
+            function zoomOut(){
+                zoomSize /= 1.06;
+            zoom()
+            }
+            function zoom() {
+                document.body.style.zoom = zoomSize;
+            }
+    
+    </script>
+</body>
+</html>
